@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tạo Đơn Hàng - ABA Cooltrans</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="ABA Logo" class="logo">
+    <h1>Tạo Đơn Hàng Mới</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">📊 Dashboard</a></li>
+      <li><a href="order_create.html" class="active">📋 Tạo đơn</a></li>
+      <li><a href="fleet_tracking.html">🚚 Đội xe</a></li>
+      <li><a href="sensor_monitor.html">🌡 Cảm biến</a></li>
+      <li><a href="report.html">📈 Báo cáo</a></li>
+      <li><a href="login.html">🔐 Đăng nhập</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form class="card">
+      <label for="customer">Tên khách hàng</label>
+      <input id="customer" type="text" placeholder="Nhập tên khách..." required>
+
+      <label for="item">Loại hàng hóa</label>
+      <select id="item">
+        <option>Thịt đông lạnh</option>
+        <option>Sữa & sản phẩm sữa</option>
+        <option>Trái cây & rau</option>
+        <option>Dược phẩm</option>
+      </select>
+
+      <label for="temp">Nhiệt độ bảo quản (°C)</label>
+      <input id="temp" type="number" placeholder="-18" required>
+
+      <label for="warehouse">Kho xuất hàng</label>
+      <select id="warehouse">
+        <option>Kho Hồ Chí Minh</option>
+        <option>Kho Hà Nội</option>
+      </select>
+
+      <label for="date">Ngày giao dự kiến</label>
+      <input id="date" type="date" required>
+
+      <label for="note">Ghi chú</label>
+      <textarea id="note" rows="3" placeholder="Thông tin thêm..."></textarea>
+
+      <button type="submit">Tạo đơn</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 ABA Cooltrans. Powered by Ta.
+  </footer>
+</body>
+</html>
