@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giám sát Đội Xe - ABA Cooltrans</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Nếu sau này bạn muốn tích hợp Leaflet hoặc Google Maps, thêm CSS/JS tại đây -->
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="ABA Logo" class="logo">
+    <h1>Giám sát Đội Xe</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">📊 Dashboard</a></li>
+      <li><a href="order_create.html">📋 Tạo đơn</a></li>
+      <li><a href="fleet_tracking.html" class="active">🚚 Đội xe</a></li>
+      <li><a href="sensor_monitor.html">🌡 Cảm biến</a></li>
+      <li><a href="report.html">📈 Báo cáo</a></li>
+      <li><a href="login.html">🔐 Đăng nhập</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Bản đồ vị trí xe</h2>
+      <!-- Placeholder map -->
+      <div id="map" style="width:100%; height:400px; background:#e0e0e0; display:flex; align-items:center; justify-content:center;">
+        <span>Map placeholder (Leaflet/Google Maps)</span>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:20px;">
+      <h2>Thông tin xe chi tiết</h2>
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background:#2a557f; color:white;">
+            <th style="padding:8px;">Biển số</th>
+            <th>Nhiệt độ (°C)</th>
+            <th>Tốc độ (km/h)</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>51C-123.45</td>
+            <td>-17.5</td>
+            <td>65</td>
+            <td>Đang vận chuyển</td>
+          </tr>
+          <tr>
+            <td>51C-321.65</td>
+            <td>-15.0</td>
+            <td>0</td>
+            <td>Đang dừng</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 ABA Cooltrans. Powered by Ta.
+  </footer>
+</body>
+</html>
