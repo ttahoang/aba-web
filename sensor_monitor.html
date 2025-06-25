@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Theo dõi Cảm biến - ABA Cooltrans</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bạn có thể tích hợp Chart.js hoặc ApexCharts để vẽ biểu đồ -->
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="ABA Logo" class="logo">
+    <h1>Theo dõi Cảm biến Kho & Xe</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">📊 Dashboard</a></li>
+      <li><a href="order_create.html">📋 Tạo đơn</a></li>
+      <li><a href="fleet_tracking.html">🚚 Đội xe</a></li>
+      <li><a href="sensor_monitor.html" class="active">🌡 Cảm biến</a></li>
+      <li><a href="report.html">📈 Báo cáo</a></li>
+      <li><a href="login.html">🔐 Đăng nhập</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Dữ liệu cảm biến real-time</h2>
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background:#2a557f; color:white;">
+            <th style="padding:8px;">Thiết bị</th>
+            <th>Nhiệt độ (°C)</th>
+            <th>Độ ẩm (%)</th>
+            <th>Thời gian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kho HCM</td>
+            <td>-18.2</td>
+            <td>85</td>
+            <td>10:05</td>
+          </tr>
+          <tr>
+            <td>Xe 51C-123.45</td>
+            <td>-17.8</td>
+            <td>83</td>
+            <td>10:07</td>
+          </tr>
+          <tr>
+            <td>Kho Hà Nội</td>
+            <td>-19.0</td>
+            <td>88</td>
+            <td>10:10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top:20px;">
+      <h2>Biểu đồ nhiệt độ trong 24h</h2>
+      <div id="chart" style="width:100%; height:300px; background:#e0e0e0; display:flex; align-items:center; justify-content:center;">
+        <span>Chart placeholder</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 ABA Cooltrans. Powered by Ta.
+  </footer>
+</body>
+</html>
